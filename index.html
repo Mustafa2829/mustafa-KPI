@@ -28,7 +28,7 @@
             <input
             type="text"
             class="search-txt"
-            placeholder="Введите категорию"
+            placeholder="Введите Имя пользователя"
             />
             <a href="" class="search-btn">
               <img
@@ -43,19 +43,6 @@
       </div>
     </div>
     <!-- navbar end -->
-   <!-- !edit start -->
-   <div class="main-modal">
-    <div class="main-modal__window">
-        <button class="window__edit_close">X</button>
-        <input type="text" class="window__edit_Name" placeholder="Name">
-        <input type="text" class="window__edit_Surname" placeholder="Surnmae">
-        <input type="text" class="window__edit_Number" placeholder="Number">
-        <input type="text" class="window__edit_KPI" placeholder="KPI">
-        <input type="text" class="window__edit_KPI2" placeholder="KPI2">
-        <button class="window__edit_btn-save">Edit</button>
-    </div>
-</div>
-<!-- !edit end -->
     <!-- CRUD start -->
     <div class="section__add">
       <div class="accordion__header">Добавить Студента</div>
@@ -63,29 +50,55 @@
         <input
           type="text"
           class="section__add_Name"
-          placeholder="Name"
+          placeholder="NAME"
         />
-        <input type="text" class="section__add_Surname" placeholder="Surname" />
+        <input class="section__add_Surname" placeholder="SURNAME" />
         <input
           type="text"
           class="section__add_Number"
-          placeholder="Number"
+          placeholder="NUMBER"
         />
         <input
           type="text"
-          class="section__add_KPI"
-          placeholder="Week KPI"
+          class="section__add_WeekKpi"
+          placeholder="WEEK KPI"
         />
         <input
-        type="text"
-        class="section__add_KPI"
-        placeholder="Month KPI"
-      />
-      
+          type="url"
+          class="section__add_MonthKpi"
+          placeholder="MONTH KPI"
+        />
         <button class="section__add_btn-add">Add</button>
       </div>
     </div>
+  
     <!-- CRUD end -->
+   <!-- !edit start -->
+   <div class="main-modal">
+    <div class="main-modal__window">
+      <button class="window__edit_close">X</button>
+      <input
+        type="text"
+        class="window__edit_Name"
+        placeholder="Name"
+      />
+      <input  class="window__edit_Surname" placeholder="Surname" />
+      <input
+        type="text"
+        class="window__edit_Number"
+        placeholder="Number"
+      />
+      <input
+        type="text"
+        class="window__edit_WeekKpi"
+        placeholder="WeekKpi"
+      />
+      <input type="text" class="window__edit_MonthKpi" placeholder="MonthKpi" />
+     
+      <button class="window__edit_btn-save">Edit</button>
+    </div>
+  </div>
+<!-- !edit end -->
 
     <!-- table start -->
      <!-- test -->
@@ -99,18 +112,21 @@
           <th>Month KPI</th>
         </tr>
       </thead>
-      <tbody id="section__read" >
-     
-      </tfoot>
-    </table>
-    <!-- endsss -->
-    <!-- table end -->
+      
+    </tfoot>
+    <tbody id="section__read" >
+  </table>
+  <!-- table end -->
+  
+      <!-- !read start  -->
+    <section id="section__read"></section>
+    <!-- !read end -->
     <!-- ! PAGINATION START -->
     <div class="paginate">
       <button id="prev-btn">Prev</button>
       <button id="next-btn">Next</button>
     </div>
-    <!-- ? PAGINATION END -->
+    <!-- ! PAGINATION END -->
     
     <script src="./main.js"></script>
   </body>

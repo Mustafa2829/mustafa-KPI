@@ -1,6 +1,4 @@
-body {
-  background-image: url(https://static.wixstatic.com/media/aaad4b_dc7a8610d4c648bb88be440bd757e6ce~mv2.png/v1/fit/w_1000%2Ch_1000%2Cal_c/file.png);
-}
+body {}
 
 .cont1 {
   display: flex;
@@ -19,12 +17,13 @@ th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
-  color: white;
+  color: green;
   margin: 50px;
 }
 
 th {
   width: 400px;
+
 }
 
 tr:nth-child(even) {
@@ -49,7 +48,7 @@ tr:nth-child(even) {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  box-shadow: 3px 0px 24px -7px black;
+  box-shadow: 3px 0px 24px -7px green;
 }
 
 .header_logo1 {
@@ -100,7 +99,7 @@ tr:nth-child(even) {
 }
 
 .search-box1:hover>.search-btn {
-  background-color: #033723a3;
+  background-color: #00e28ba3;
 }
 
 .search-txt {
@@ -123,7 +122,7 @@ tr:nth-child(even) {
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(https://icons.veryicon.com/png/o/miscellaneous/yuanql/icon-admin.png);
+  background-image: url(https://cdn-icons-png.flaticon.com/512/2206/2206368.png);
 }
 
 .header_center1 a {
@@ -253,30 +252,8 @@ tr:nth-child(even) {
   margin-top: 20px;
 } */
 
-.card {
-  margin: 10px;
-  border: 1px solid #cddfcb;
-  width: 25%;
-  /* height: 300px; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #00000005;
-  justify-content: space-between;
-}
 
-.card h2 .card p {
-  margin: 0;
-}
 
-.card2 {
-  margin: 20px 20px;
-  width: 90%;
-  height: 200px;
-  position: relative;
-  perspective: 1000px;
-  border: none;
-}
 
 .front2,
 .back2 {
@@ -306,57 +283,15 @@ tr:nth-child(even) {
   border: 1px solid #cddfcb;
 }
 
-#card_details2 {
-  width: 98%;
-  height: 100%;
-  background-color: #e2ede9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.card_details2 p {
-  width: 90%;
-}
+
 
 #details {
   box-sizing: border-box;
   width: 90%;
 }
 
-.card2:hover .front2 {
-  transform: rotateY(180deg);
-}
 
-.card2:hover .back2 {
-  transform: rotateY(360deg);
-}
-
-.text {
-  font-family: "Comfortaa", cursive;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.text span {
-  font-size: 15px;
-}
-
-.text h2 {
-  margin: 10px;
-}
-
-.userIcon {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.userIcon img {
-  height: 30px;
-}
 
 .btnBuy,
 .paginate button {

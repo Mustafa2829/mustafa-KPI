@@ -1,12 +1,11 @@
-let API = "http://localhost:8001/students";
+let API = "  http://localhost:8002/students";
 
 // инпуты и кнопки для создания новых данных
 let inpName = document.querySelector(".section__add_Name");
-// console.log(inpDetails);
 let inpSurname = document.querySelector(".section__add_Surname");
 let inpNumber = document.querySelector(".section__add_Number");
-let inpWeekKPI = document.querySelector(".section__add_KPI");
-let inpMonthKPI = document.querySelector(".window__edit_KPI2")
+let inpWeekKpi = document.querySelector(".section__add_WeekKpi");
+let inpMonthKpi = document.querySelector(".section__add_MonthKpi");
 let btnAdd = document.querySelector(".section__add_btn-add");
 let accordion = document.querySelector(".accordion__header");
 
@@ -17,12 +16,12 @@ let sectionRead = document.getElementById("section__read");
 let inpEditName = document.querySelector(".window__edit_Name");
 let inpEditSurname = document.querySelector(".window__edit_Surname");
 let inpEditNumber = document.querySelector(".window__edit_Number");
-let inpEditPoints = document.querySelector(".window__edit_KPI2");
+let inpEditWeekKpi = document.querySelector(".window__edit_WeekKpi");
+let inpEditMonthKpi = document.querySelector(".window__edit_MonthKpi");
 let btnEdit = document.querySelector(".window__edit_btn-save");
 let btnCloseModal = document.querySelector(".window__edit_close");
 let mainModal = document.querySelector(".main-modal");
 
-console.log(inpEditPoints);
 // инпут и переменная для поиска
 let inpSearch = document.querySelector(".search-txt");
 let searchValue = inpSearch.value;
@@ -68,8 +67,8 @@ clickAdmin.addEventListener("click", () => {
   adminReturn();
 });
 
-// ! ============= Accordion start =========
 
+// ? ========== ACCORDION START ==============
 accordion.addEventListener("click", () => {
   accordion.classList.toggle("active");
   let accordionBody = document.getElementById("accordion__body");
@@ -81,7 +80,7 @@ accordion.addEventListener("click", () => {
 });
 
 // ? ========== ACCORDION END ==============
-
+// !=============== Create start ===========
 
 async function createProduct(obj) {
   await fetch(API, {
@@ -96,29 +95,32 @@ async function createProduct(obj) {
 
 btnAdd.addEventListener("click", () => {
   // проверка на заполненность полей
-  // if (
-  //   !inpDetails.value.trim() ||
-  //   !inpQuantity.value.trim() ||
-  //   !inpPrice.value.trim() ||
-  //   !inpCategory.value.trim()
-  // ) {
-  //   alert("Заполните поля!");
-  //   return;
-  // }
+  if (
+    !inpName.value.trim() ||
+    !inpSurname.value.trim() ||
+    !inpNumber.value.trim() ||
+    !inpWeekKpi.value.trim() ||
+    !inpMonthKpi.value.trim()
+
+  ) {
+    alert("Заполните поля!");
+    return;
+  }
   let obj = {
-    name: inpName.value,
-    surname: inpSurname.value,
-    number: inpNumber.value,
-    KPI: inpWeekKPI.value,
-    KPI2: inpMonthKPI.value
+    Name: inpName.value,
+    Surname: inpSurname.value,
+    Number: inpNumber.value,
+    WeekKpi: inpWeekKpi.value,
+    MonthKpi: inpMonthKpi.value,
   };
   createProduct(obj);
-  inpDetails.value = "";
-  inpPrice.value = "";
-  inpQuantity.value = "";
-  inpCategory.value = "";
-
+  inpName.value = "";
+  inpSurname.value = "";
+  inpNumber.value = "";
+  inpWeekKpi.value = "";
+  inpMonthKpi.value = "";
 });
+
 
 // ? ============= CREATE END ===========
 // ? =========== PAGINATION start =======
@@ -162,7 +164,8 @@ async function readProducts() {
         <td>${student.name}</td>
         <td>${student.surname}</td>
         <td>${student.number}</td>
-        <td>${student.kpi}</td> 
+        <td>${student.WeekKpi}</td> 
+        <td>${student.MonthKpi}</td> 
         <td> <div class="admin-panel" id="admin">
         <img
           src="https://cdn-icons-png.flaticon.com/512/1799/1799391.png"
@@ -180,12 +183,11 @@ async function readProducts() {
     `;
   });
 
-
+  pageTotal();
   adminReturn();
 }
 readProducts();
 // ?  ======= READ END ============
-// ! ===========
 async function editProduct(id, editObj) {
   // if (
   //   !inpEditName.value.trim() ||
@@ -210,13 +212,13 @@ let editId = "";
 async function handleEditBtn(id) {
   mainModal.style.display = "block";
   let data = await fetch(`${API}/${id}`).then((res) => res.json());
-  console.log(data.surname);
-  inpEditName.value = data.name
-  inpEditSurname.value = data.surname
-  inpEditNumber.value = data.number
-  inpEditKpi.value = data.kpi
+  // console.log(data.surname);
+  inpEditName.value = data.Name
+  inpEditSurname.value = data.Surname
+  inpEditNumber.value = data.Number
+  inpEditWeekKpi.value = data.WeekKpi
+  inpEditMonthKpi.value = data.MonthKpi
   editId = data.id
-  inpEditMonthKPI2 = data.KPI2
 }
 
 btnEdit.addEventListener("click", () => {
@@ -224,9 +226,10 @@ btnEdit.addEventListener("click", () => {
     name: inpEditName.value,
     surname: inpEditSurname.value,
     number: inpEditNumber.value,
-    kpi: inpEditPoints.value,
+    WeekKpi: inpEditWeekKpi.value,
+    MonthKpi: inpEditMonthKpi.value
   };
-  // console.log(editObj);
+  console.log(editObj);
   editProduct(editId, editObj);
   mainModal.style.display = "none";
 })
@@ -236,10 +239,9 @@ async function deleteProduct(id) {
   await fetch(`${API}/${id}`, {
     method: "DELETE",
   });
+
   readProducts();
-
 }
-
-
+// ! ============ DELETE END ==============
 
 

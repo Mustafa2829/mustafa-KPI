@@ -1,44 +1,155 @@
 {
   "students": [
     {
-      "name": "Vahid",
-      "surname": "Suleimanov",
-      "number": "+996704111177",
-      "kpi": "99.9",
-      "kpi2": "100",
-      "id": 1
+      "Name": "Mustafa",
+      "Surname": "Magometov",
+      "Number": "996703862629",
+      "WeekKpi": "40",
+      "MonthKpi": "94.5",
+      "id": 3,
+      "name": "Mustafa",
+      "surname": "Magometov",
+      "number": "996703862629"
     },
     {
-      "name": "Vahid",
-      "surname": "Suleimanov",
-      "number": "+996704111177",
-      "kpi": "99.9",
-      "kpi2": "100",
-      "id": 1
+      "Name": "Mustafa",
+      "Surname": "Magometov",
+      "Number": "996704344444",
+      "WeekKpi": "50",
+      "MonthKpi": "99,9",
+      "id": 4,
+      "name": "Mustafa",
+      "surname": "Magometov",
+      "number": "996704344444"
     },
     {
-      "name": "Vahid",
-      "surname": "Suleimanov",
-      "number": "+996704111177",
-      "kpi": "99.9",
-      "kpi2": "100",
-      "id": 1
+      "Name": "Abdulla",
+      "Surname": "Alumjaniov",
+      "Number": "9967003333",
+      "WeekKpi": "39",
+      "MonthKpi": "100",
+      "id": 5,
+      "name": "Abdulla",
+      "surname": "Alumjaniov",
+      "number": "9967003333"
     },
     {
-      "name": "Vahid",
-      "surname": "Suleimanov",
-      "number": "+996704111177",
-      "kpi": "99.9",
-      "kpi2": "100",
-      "id": 1
+      "Name": "rff",
+      "Surname": "rf",
+      "Number": "frrf",
+      "WeekKpi": "45",
+      "MonthKpi": "100",
+      "id": 6,
+      "name": "rff",
+      "surname": "rf",
+      "number": "frrf"
     },
     {
-      "name": "Vahid",
-      "surname": "Suleimanov",
-      "number": "+996704111177",
-      "kpi": "99.9",
-      "kpi2": "100",
-      "id": 1
+      "Name": "Musa",
+      "Surname": "Musa",
+      "Number": "9967044444",
+      "WeekKpi": "14",
+      "MonthKpi": "132",
+      "id": 7,
+      "name": "Musa",
+      "surname": "Musa",
+      "number": "9967044444"
+    },
+    {
+      "Name": "Musa",
+      "Surname": "MUSa",
+      "Number": "000000",
+      "WeekKpi": "50",
+      "MonthKpi": "100",
+      "id": 8,
+      "name": "Musa",
+      "surname": "MUSa",
+      "number": "000000"
+    },
+    {
+      "Name": "Mustafa",
+      "Surname": "Magometov",
+      "Number": "00000",
+      "WeekKpi": "50",
+      "MonthKpi": "100",
+      "id": 9,
+      "name": "Mustafa",
+      "surname": "Magometov",
+      "number": "00000"
+    },
+    {
+      "Name": "Mustafa",
+      "Surname": "Mustafa",
+      "Number": "00000",
+      "WeekKpi": "50",
+      "MonthKpi": "100",
+      "id": 10,
+      "name": "Mustafa",
+      "surname": "Mustafa",
+      "number": "00000"
+    },
+    {
+      "Name": "Fariza",
+      "Surname": "Fariza",
+      "Number": "777777",
+      "WeekKpi": "100",
+      "MonthKpi": "150",
+      "id": 11,
+      "name": "Fariza",
+      "surname": "Fariza",
+      "number": "777777"
+    },
+    {
+      "Name": "Musaa",
+      "Surname": "MUsaa",
+      "Number": "333",
+      "WeekKpi": "99,8",
+      "MonthKpi": "67,3",
+      "id": 12,
+      "name": "Musaa",
+      "surname": "MUsaa",
+      "number": "333"
+    },
+    {
+      "Name": "eeeeee",
+      "Surname": "eeeee",
+      "Number": "33333",
+      "WeekKpi": "110",
+      "MonthKpi": "99",
+      "id": 13,
+      "name": "Ali",
+      "surname": "Aliev",
+      "number": "99670454343"
+    },
+    {
+      "Name": "dfghgf",
+      "Surname": "fgfd",
+      "Number": "dfgf",
+      "WeekKpi": "100",
+      "MonthKpi": "110",
+      "id": 14,
+      "name": "musa",
+      "surname": "Musaaa",
+      "number": "9967044444"
+    },
+    {
+      "Name": "feve",
+      "Surname": "efvev",
+      "Number": "efvev",
+      "WeekKpi": "efvefv",
+      "MonthKpi": "eve",
+      "id": 15,
+      "name": "feve",
+      "surname": "efvev",
+      "number": "efvev"
+    },
+    {
+      "Name": "mustafa",
+      "Surname": "sdcc",
+      "Number": "vev",
+      "WeekKpi": "dcc",
+      "MonthKpi": "cddw",
+      "id": 16
     }
   ]
 }
