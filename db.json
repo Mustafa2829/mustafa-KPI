@@ -1,0 +1,44 @@
+{
+  "students": [
+    {
+      "name": "Vahid",
+      "surname": "Suleimanov",
+      "number": "+996704111177",
+      "kpi": "99.9",
+      "kpi2": "100",
+      "id": 1
+    },
+    {
+      "name": "Vahid",
+      "surname": "Suleimanov",
+      "number": "+996704111177",
+      "kpi": "99.9",
+      "kpi2": "100",
+      "id": 1
+    },
+    {
+      "name": "Vahid",
+      "surname": "Suleimanov",
+      "number": "+996704111177",
+      "kpi": "99.9",
+      "kpi2": "100",
+      "id": 1
+    },
+    {
+      "name": "Vahid",
+      "surname": "Suleimanov",
+      "number": "+996704111177",
+      "kpi": "99.9",
+      "kpi2": "100",
+      "id": 1
+    },
+    {
+      "name": "Vahid",
+      "surname": "Suleimanov",
+      "number": "+996704111177",
+      "kpi": "99.9",
+      "kpi2": "100",
+      "id": 1
+    }
+  ]
+}
